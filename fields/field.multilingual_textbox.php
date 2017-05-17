@@ -107,7 +107,7 @@ class fieldMultilingual_TextBox extends FieldTextBox
         return $handle;
     }
 
-    public function getCurrentHandle($entry_id, $lc)
+    public function getCurrentHandle($entry_id, $lc = null)
     {
         return Symphony::Database()->fetchVar('handle', 0, sprintf(
             "
